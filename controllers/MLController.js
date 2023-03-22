@@ -50,7 +50,7 @@ const details = (req, res, next) => {
         // },
         id: response.data.id,
         title: response.data.title,
-        url: response.permalink,
+        url: response.data.permalink,
         price: {
           currency: response.data.currency_id,
           amount: Math.trunc(response.data.price),
